@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTING APP</title>
+    <link rel="stylesheet" href="counting.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Mr+De+Haviland&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cover">
+        <h1>COUNTING BOARD</h1>
+        <h2 id="count-num">0</h2>
+        
+    <!-- adding button for counting the poeple entering the train -->
+        <button id="increment-col" onclick="increment()">INCREMENT</button>
+
+        <button id="save" onclick="save()">SAVE</button>
+
+        <div class="bck">
+            <p class="save-el">Previous entiries:</p>
+            <p id="save-el"> </p>
+            <div class="notepad-save">
+                <h3>Notepad</h3><br>
+                <textarea name="message" id="message" rows="10" onkeyup="saveValue(this)" placeholder="Type your message here..." autofocus></textarea><br>
+
+                <div class="btn-wrap">
+                    <button id="save-msg">Save Message</button>
+                    <button id="clear">Clear</button>
+                </div>
+                
+                
+                
+            </div>
+            
+        </div>
+
+        
+    </div>
+
+
+<script src="counting.js"></script>
+</body>
+</html>
