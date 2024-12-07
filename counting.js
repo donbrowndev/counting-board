@@ -15,7 +15,7 @@ function increment() {
 
 function save() {
 
-    let myCount = count + " ↔️ "
+    let myCount = count + " | "
     saveEl.textContent += myCount
     countNum.textContent = 0
     count = 0
