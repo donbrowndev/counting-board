@@ -15,7 +15,7 @@ function increment() {
 
 function save() {
 
-    let myCount = count + " - "
+    let myCount = count + " | "
     saveEl.textContent += myCount
     countNum.textContent = 0
     count = 0
@@ -48,4 +48,4 @@ function loadingMessage () {
 document.getElementById("save-msg").addEventListener("click", saveMsg);
 document.getElementById("clear").addEventListener("click", clearMsg)
 
-window.addEventListener("DOMContentLoaded", loadMessage)
+window.addEventListener("DOMContentLoaded", loadingMessage)
