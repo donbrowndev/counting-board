@@ -15,7 +15,7 @@ function increment() {
 
 function save() {
 
-    let myCount = count + " | "
+    let myCount = count + " ↔️ "
     saveEl.textContent += myCount
     countNum.textContent = 0
     count = 0
@@ -35,10 +35,10 @@ function clearMsg() {
 }
 
 //loading message from localstorage
-function loadingMessage () {
+function loadingMessage() {
     const saveMessage = localStorage.getItem("saveMsg");
     if (saveMsg) {
-        document.getElementById("message").value = saveMsg;
+        document.getElementById("message").value = saveMessage;
     }
 }
 
