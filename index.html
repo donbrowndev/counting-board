@@ -12,16 +12,32 @@
 </head>
 <body>
     <div class="cover">
-        <h1>COUNTING BOARD</h1>
-        <h2 id="count-num">0</h2>
+                <h1>COUNTING BOARD</h1>
+                <h2 id="count-num">0</h2>
+            
         
     <!-- adding button for counting the poeple entering the train -->
-        <button id="increment-col" onclick="increment()">INCREMENT</button>
+        <div class="columnTwo">
+            <div class="firstColumn">
+                <button id="increment-col" onclick="increment()">INCREMENT</button>
+                <button id="save" onclick="save()">SAVE</button>
+            </div>
 
-        <button id="save" onclick="save()">SAVE</button>
+            <!-- Toggle switch button -->
+            <div class="togg">
+                <h4>Use Volume Key</h4>
+                <label class="toggle-switch">
+                    <input type="checkbox" value="checkbox">
+                    <span class="slider"></span>
+                </label>
+                <h4>Use Screen Tap</h4>
+            </div>
+
+        </div>
+       
 
         <div class="bck">
-            <p class="save-el">Previous entiries:</p>
+            <p class="save-el">Previous entries:</p>
             <p id="save-el"> </p>
             <div class="notepad-save">
                 <h3>Notepad</h3><br>
