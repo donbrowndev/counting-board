@@ -1,11 +1,6 @@
-//counting train button code (done 1 - 22)
-
-//document.getElementById("count-numb").innerText = 5
-let saveEl = document.getElementById("save-el")
+//counting button code (done 1 - 22)
 let countNum = document.getElementById("count-num");
-
-// console.log(save-el);
-
+let saveEl = document.getElementById("save-el");
 let count = 0;
 
 function increment() {
@@ -54,37 +49,36 @@ window.addEventListener("DOMContentLoaded", loadingMessage)
 
 // code for handling volume key behaviour
 // toggle-switch listener
-const toggleSwitch = document.querySelector("toggle-switch input");
-let volumeKey = false;
+// const toggleSwitch = document.querySelector(".toggle-switch input");
+// let volumeKeyMode = false;
 
-toggleSwitch.addEventListener("ClickChange", function() {
-    volumeKey = this.checked;;
-    if (volumeKey) {
-        alert("Volume key control mode activated.");
-    } else {
-        alert("Screen tap control activated.");
-    }
-}
-);
+// toggleSwitch.addEventListener("change", function() {
+//     volumeKey = this.checked;
+//     if (volumeKeyMode) {
+//         alert("Volume key control mode activated.");
+//     } else {
+//         alert("Screen tap control activated.");
+//     }
+// }
+// );
 
 // volume button listner
-document.addEventListener("buttonKey", function (event) {
-    if (volumeKey) {
-        if (event.keyCode === 175) {
-            increment();
-        } else if (event.keyCode === 174) {
-            save();
-        }
-    }
-}
-);
+// document.addEventListener("keydown", function (event) {
+//     if (volumeKey) {
+//         if (event.code === "Arrowup") {
+//             increment();
+//         } else if (event.code === "ArrowDown") {
+//             save();
+//         }
+//     }
+// }
+// );
 
 // Screen tap control
-document.getElementById("count-num").addEventListener("Click", function () {
-    if (!volumeKey) {
-        increment();
-    }
-}
-);
+// document.getElementById("count-num").addEventListener("click", function () {
+//     if (!volumeKeyMode) {
+//         increment();
+//     }
+// }
+// );
 
-// showcount listener

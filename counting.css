@@ -239,6 +239,7 @@ h3 {
 
 h4 {
     margin: 10px 0;
+    color: rgba(146, 145, 145, 0.459);
 }
 
 .toggle-switch {
@@ -261,7 +262,8 @@ h4 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #3f0707;
+    /* background-color: #3f0707; */
+    background-color:  rgba(87, 85, 85, 0.459);;
     transition: 0.4s;
     border-radius: 34px;
 }
@@ -277,13 +279,15 @@ h4 {
     transition: 0.4s;
     border-radius: 50%;
 }
-input:checked + .slider:before {
+
+/* toggle switch disable because of need React to activate the js */
+/* input:checked + .slider:before {
     transform: translateY(-26px); 
 }
 
 input:checked + .slider {
     background-color: #4CAF50;
-}
+} */
 
 
 
